@@ -1,0 +1,54 @@
+﻿<Window x:Class="SUM_ITcalculator_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SUM_ITcalculator_2"
+        mc:Ignorable="d"
+        Title="SUM_IT Calculator" Height="700" Width="550" MinWidth="490" MinHeight="600" MaxWidth="600" MaxHeight="800" ResizeMode="NoResize" Icon="/Screenshot_20221209_145237.png">
+    <Grid x:Name="MainGrid">
+        <TextBox x:Name="InputPlane" Height="33" Margin="85,20,0,0" TextWrapping="Wrap" Text="0" Width="390" VerticalAlignment="Top" TextAlignment="Right" FontSize="24" FontFamily="Poor Richard" Panel.ZIndex="2" BorderBrush="{x:Null}" SelectionBrush="#FF29B109" Background="{x:Null}"/>
+        <TextBox x:Name="previewOperationsPlane" Height="20" Margin="85,58,0,0" TextWrapping="Wrap" Text="Preview" VerticalAlignment="Top" Width="390" TextAlignment="Right" FontFamily="Poor Richard" Foreground="#FF353333" BorderBrush="{x:Null}" Panel.ZIndex="1" IsEnabled="False"/>
+        <TextBox x:Name="ResponsePlane" HorizontalAlignment="Left" Height="64" Margin="85,83,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="390" BorderBrush="{x:Null}" Foreground="#FF646464" SelectionBrush="#FF29B109" FontSize="60" FontFamily="Franklin Gothic Heavy" FontWeight="Bold" IsEnabled="False"/>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="31,10,31,509" CornerRadius="1,1,1,1">
+            <Border.Effect>
+                <DropShadowEffect/>
+            </Border.Effect>
+            <TextBlock x:Name="MainAnswerPlane" HorizontalAlignment="Left" Height="127" TextWrapping="Wrap" VerticalAlignment="Center" Width="438" Margin="22,0,0,0" FontSize="48" FontFamily="Cooper Black" IsEnabled="False" Foreground="#FF585555"/>
+        </Border>
+        <Button x:Name="Btn1" Content="1" HorizontalAlignment="Left" Height="45" Margin="31,220,0,0" VerticalAlignment="Top" Width="94" Click="Button_Click" FontWeight="Bold" FontFamily="Poor Richard" FontSize="18"/>
+        <Button x:Name="Btn2" Content="2" HorizontalAlignment="Left" Height="45" Margin="156,220,0,0" VerticalAlignment="Top" Width="94" FontWeight="Bold" FontFamily="Poor Richard" FontSize="18" Click="Btn2_Click"/>
+        <Button x:Name="Btn3" Content="3" HorizontalAlignment="Left" Height="45" Margin="280,220,0,0" VerticalAlignment="Top" Width="94" FontWeight="Bold" FontSize="18" FontFamily="Poor Richard" Click="Btn3_Click"/>
+        <Button x:Name="Btn4" Content="4" HorizontalAlignment="Left" Height="45" Margin="31,282,0,0" VerticalAlignment="Top" Width="94" FontWeight="Bold" FontSize="18" FontFamily="Poor Richard" Click="Btn4_Click"/>
+        <Button x:Name="Btn5" Content="5" HorizontalAlignment="Left" Height="45" Margin="156,282,0,0" VerticalAlignment="Top" Width="94" FontWeight="Bold" FontSize="18" FontFamily="Poor Richard" Click="Btn5_Click"/>
+        <Button x:Name="Btn6" Content="6" HorizontalAlignment="Left" Height="45" Margin="280,282,0,0" VerticalAlignment="Top" Width="94" FontWeight="Bold" FontSize="18" FontFamily="Poor Richard" Click="Btn6_Click"/>
+        <Button x:Name="Btn7" Content="7" HorizontalAlignment="Left" Height="45" Margin="31,342,0,0" VerticalAlignment="Top" Width="94" FontWeight="Bold" FontSize="18" FontFamily="Poor Richard" Click="Btn7_Click"/>
+        <Button x:Name="Btn8" Content="8" HorizontalAlignment="Left" Height="45" Margin="156,342,0,0" VerticalAlignment="Top" Width="94" FontWeight="Bold" FontSize="18" FontFamily="Poor Richard" Click="Btn8_Click"/>
+        <Button x:Name="Btn9" Content="9" HorizontalAlignment="Left" Height="45" Margin="280,342,0,0" VerticalAlignment="Top" Width="94" FontWeight="Bold" FontSize="18" FontFamily="Poor Richard" Click="Btn9_Click"/>
+        <Button x:Name="AnswerBtn" Content="=" HorizontalAlignment="Left" Height="105" Margin="407,282,0,0" VerticalAlignment="Top" Width="112" FontSize="36" FontFamily="Cooper Black" FontWeight="Bold" Click="AnswerBtn_Click"/>
+        <Button x:Name="ACbtn" Content="AC" HorizontalAlignment="Left" Height="45" Margin="407,220,0,0" VerticalAlignment="Top" Width="112" FontFamily="Cooper Black" FontWeight="Bold" FontSize="22" Foreground="#FFBA3232" Click="ACbtn_Click"/>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="32,476,176,30" CornerRadius="1,1,1,1">
+            <Grid Margin="-1,9,-1,9">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="137.598"/>
+                </Grid.ColumnDefinitions>
+                <Button Content="+" HorizontalAlignment="Left" Height="22" Margin="10,10,0,0" VerticalAlignment="Top" Width="86" FontFamily="Copperplate Gothic Light" FontSize="14" Click="Button_Click_1"/>
+                <Button x:Name="MinusBtn" Content="-" HorizontalAlignment="Left" Height="22" Margin="128,10,0,0" VerticalAlignment="Top" Width="86" Grid.ColumnSpan="2" FontFamily="Copperplate Gothic Light" FontWeight="Bold" FontSize="14" Click="MinusBtn_Click"/>
+                <Button x:Name="TanBtn" Content="Tan(y" HorizontalAlignment="Left" Height="22" Margin="42,10,0,0" VerticalAlignment="Top" Width="86" Grid.Column="1" FontFamily="Copperplate Gothic Light" FontWeight="Bold" FontSize="14" Click="TanBtn_Click"/>
+                <Button x:Name="MultiplyBtn" Content="x" HorizontalAlignment="Left" Height="22" Margin="10,51,0,0" VerticalAlignment="Top" Width="86" FontFamily="Copperplate Gothic Light" FontWeight="Bold" FontSize="14" Click="MultiplyBtn_Click"/>
+                <Button x:Name="DivideBtn" Content="/" HorizontalAlignment="Left" Height="22" Margin="128,51,0,0" VerticalAlignment="Top" Width="86" Grid.ColumnSpan="2" FontFamily="Copperplate Gothic Light" FontWeight="Bold" FontSize="14" Click="DivideBtn_Click"/>
+                <Button x:Name="CosBtn" Content="Cos(y" HorizontalAlignment="Left" Height="22" Margin="42,51,0,0" VerticalAlignment="Top" Width="86" Grid.Column="1" FontFamily="Copperplate Gothic Light" FontWeight="Bold" FontSize="14" Click="CosBtn_Click"/>
+                <Button x:Name="SqrBtn" Content="X^(y" HorizontalAlignment="Left" Height="22" Margin="10,92,0,0" VerticalAlignment="Top" Width="86" FontFamily="Copperplate Gothic Light" FontWeight="Bold" FontSize="14" Click="SqrBtn_Click"/>
+                <Button x:Name="SqrRootBtn" Content="X^(1/y" HorizontalAlignment="Left" Height="22" Margin="128,92,0,0" VerticalAlignment="Top" Width="86" Grid.ColumnSpan="2" FontFamily="Copperplate Gothic Light" FontWeight="Bold" FontSize="14" Click="SqrRootBtn_Click"/>
+                <Button x:Name="SinBtn" Content="Sin(y" HorizontalAlignment="Left" Height="22" Margin="42,92,0,0" VerticalAlignment="Top" Width="86" Grid.Column="1" FontFamily="Copperplate Gothic Light" FontWeight="Bold" FontSize="14" Click="SinBtn_Click"/>
+            </Grid>
+        </Border>
+        <Button x:Name="CloseBracketBtn" Content=")" HorizontalAlignment="Left" Height="57" Margin="407,476,0,0" VerticalAlignment="Top" Width="112" FontSize="16" FontWeight="Bold" FontFamily="Cooper Black" Click="CloseBracketBtn_Click"/>
+        <Button x:Name="modulusBtn" Content="X%y" HorizontalAlignment="Left" Height="59" Margin="407,563,0,0" VerticalAlignment="Top" Width="112" FontSize="16" FontWeight="Bold" FontFamily="Cooper Black" Click="modulusBtn_Click"/>
+        <Button x:Name="Btn0" Content="0" HorizontalAlignment="Left" Height="45" Margin="32,408,0,0" VerticalAlignment="Top" Width="218" FontSize="18" FontFamily="Poor Richard" FontWeight="Bold" Click="Btn0_Click"/>
+        <Button x:Name="CEbtn" Content="CE" HorizontalAlignment="Left" Height="45" Margin="407,408,0,0" VerticalAlignment="Top" Width="112" FontFamily="Cooper Black" FontSize="22" Foreground="#FFBA3232"/>
+        <Button x:Name="DPbtn" Content="." HorizontalAlignment="Left" Height="45" Margin="280,408,0,0" VerticalAlignment="Top" Width="94" FontSize="20" FontFamily="Constantia" FontWeight="Bold" Click="DPbtn_Click"/>
+
+    </Grid>
+</Window>
