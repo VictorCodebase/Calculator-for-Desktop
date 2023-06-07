@@ -51,7 +51,7 @@ ks to the C# programming community for their valuable resources and tutorials th
 
 ## Contact
 
-For any inquiries or questions, please contact [your-email-address].
+For any inquiries or questions, please contact victorkithinji@outlook.com.
 
 ##Screen shots
 ## #1!
