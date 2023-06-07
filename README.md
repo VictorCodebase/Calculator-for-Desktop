@@ -46,12 +46,16 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
-Special than![Screenshot 2023-06-07 133208](https://github.com/VictorCodebase/Calculator-for-Desktop/assets/135356007/b2599287-01bc-4edc-b1f8-ac084eac5f1c)
-![Screenshot 2023-06-07 133208](https://github.com/VictorCodebase/Calculator-for-Desktop/assets/135356007/3e1f7ee7-df02-4f30-9d88-f73dca022d21)
+
 ks to the C# programming community for their valuable resources and tutorials that helped in the development of this calculator.
 
 ## Contact
 
 For any inquiries or questions, please contact [your-email-address].
 
-Feel free to modify the README according to your project's specific details and requirements.
+##Screen shots
+## #1!
+![Screenshot 2023-06-07 133208](https://github.com/VictorCodebase/Calculator-for-Desktop/assets/135356007/3ee787ca-d12a-48ae-9625-fa0df01258f7)
+## #2 
+![Screenshot 2023-06-07 133633](https://github.com/VictorCodebase/Calculator-for-Desktop/assets/135356007/3577f6ac-5b3c-47ac-813f-812c674ef308)
+
